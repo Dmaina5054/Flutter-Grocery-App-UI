@@ -71,7 +71,12 @@ class _ProductDetailsScreenState extends State<ProductDetailsScreen> {
                     ),
                     Spacer(),
                     Divider(thickness: 1),
-                    getProductDataRowWidget("Product Details"),
+                    GestureDetector(
+                      onTap: () {
+                        print("logic to show full details");
+                      },
+                      child: getProductDataRowWidget("Product Details"),
+                    ),
                     Divider(thickness: 1),
                     getProductDataRowWidget("Nutritions",
                         customWidget: nutritionWidget()),
@@ -83,6 +88,9 @@ class _ProductDetailsScreenState extends State<ProductDetailsScreen> {
                     Spacer(),
                     AppButton(
                       label: "Add To Basket",
+                      onPressed: () {
+                        print("Add item to Bucket logic");
+                      },
                     ),
                     Spacer(),
                   ],
