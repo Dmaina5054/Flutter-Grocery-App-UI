@@ -7,7 +7,7 @@ class FavouriteScreen extends StatelessWidget {
     return Container(
       child: Center(
         child: AppText(
-          text: "No Favorite Items",
+          text: "Will be our favorites screen",
           fontWeight: FontWeight.w600,
           color: Color(0xFF7C7C7C),
         ),

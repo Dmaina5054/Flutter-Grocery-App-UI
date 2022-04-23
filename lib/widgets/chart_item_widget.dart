@@ -66,10 +66,15 @@ class _ChartItemWidgetState extends State<ChartItemWidget> {
             ),
             Column(
               children: [
-                Icon(
-                  Icons.close,
-                  color: AppColors.darkGrey,
-                  size: 25,
+                new GestureDetector(
+                  onTap: () {
+                    print('Bloc event to remove item from cart');
+                  },
+                  child: Icon(
+                    Icons.close,
+                    color: AppColors.darkGrey,
+                    size: 25,
+                  ),
                 ),
                 Spacer(
                   flex: 5,

@@ -11,7 +11,7 @@ List<AccountItem> accountItems = [
   AccountItem(
       "Delivery Access", "assets/icons/account_icons/delivery_icon.svg"),
   AccountItem("Payment Methods", "assets/icons/account_icons/payment_icon.svg"),
-  AccountItem("Promo Card", "assets/icons/account_icons/promo_icon.svg"),
+  AccountItem("My Wallet", "assets/icons/account_icons/promo_icon.svg"),
   AccountItem(
       "Notifications", "assets/icons/account_icons/notification_icon.svg"),
   AccountItem("Help", "assets/icons/account_icons/help_icon.svg"),

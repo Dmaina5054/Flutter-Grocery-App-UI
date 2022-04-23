@@ -22,15 +22,60 @@ class SearchBarWidget extends StatelessWidget {
           SizedBox(
             width: 8,
           ),
+          // new GestureDetector(
+          //   onTap: () {
+          //     showSearch(context: context, delegate: CustomDelegate());
+          //   },
+          //   child: Text(
+          //     "Search Store",
+          //     style: TextStyle(
+          //         fontSize: 18,
+          //         fontWeight: FontWeight.bold,
+          //         color: Color(0xFF7C7C7C)),
+          //   ),
+          // )
           Text(
             "Search Store",
             style: TextStyle(
                 fontSize: 18,
                 fontWeight: FontWeight.bold,
                 color: Color(0xFF7C7C7C)),
-          )
+          ),
         ],
       ),
     );
+  }
+}
+
+class CustomDelegate extends SearchDelegate {
+  @override
+  List<Widget> buildActions(BuildContext context) {
+    //TODO: implement buildActions
+    // return [
+    //   IconButton(
+    //       onPressed: () {
+    //         query = '';
+    //       },
+    //       icon: Icon(Icons.arrow_back))
+    // ];
+    return null;
+  }
+
+  @override
+  Widget buildLeading(BuildContext context) {
+    //TODO:implement buildleading
+    return null;
+  }
+
+  @override
+  Widget buildResults(BuildContext context) {
+    //TODO: implement build results here
+    return null;
+  }
+
+  @override
+  Widget buildSuggestions(BuildContext context) {
+    //TODO: implement build suggestions here
+    return null;
   }
 }

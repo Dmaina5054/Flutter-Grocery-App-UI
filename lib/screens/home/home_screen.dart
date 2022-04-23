@@ -148,13 +148,18 @@ class HomeScreen extends StatelessWidget {
           style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
         ),
         Spacer(),
-        Text(
-          "See All",
-          style: TextStyle(
-              fontSize: 18,
-              fontWeight: FontWeight.bold,
-              color: AppColors.primaryColor),
-        ),
+        new GestureDetector(
+          onTap: () {
+            print('user would see all');
+          },
+          child: new Text(
+            "See All",
+            style: TextStyle(
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+                color: AppColors.primaryColor),
+          ),
+        )
       ],
     );
   }
@@ -171,7 +176,7 @@ class HomeScreen extends StatelessWidget {
           width: 8,
         ),
         Text(
-          "Khartoum,Sudan",
+          "Nairobi Ke",
           style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
         )
       ],
